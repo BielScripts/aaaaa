@@ -1,0 +1,34 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "YsacXy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local  CombatTab = Window:MakeTab({
+    Name = "Combat",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = CombatTab:AddSection({
+    Name = "Combat"
+})
+
+CombatTab:AddButton({
+    Name = "Parry",
+    Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+      end
+})
+
+CombatTab:AddButton({
+    Name = "Manual spam",
+    Callback = function()
+           loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
+      end
+})
+
+CombatTab:AddButton({
+    Name = "Fps boost",
+    Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+      end
+})
